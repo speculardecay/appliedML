@@ -25,8 +25,12 @@ class Fstream:
     
     @staticmethod
     def print_json_structure(data_file):
-        for id, item in data_file["Items"].items():
-            print(id, item)
+        for book_id, book in data_file["Books"].items():
+            available = ""
+            if book['available'] == 0:
+                available = ", Not available"
+            print(f"{book_id} - {book['name']}, {book['author']}, {book['type']}{available}")
+
                                   
 
 
