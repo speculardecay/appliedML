@@ -1,0 +1,46 @@
+{
+    "Books": {
+        "IDIMIJ": {
+            "name": "Dune",
+            "type": "Science Fiction",
+            "author": "Frank Herbert",
+            "available": 0,
+            "user": 0
+        },
+        "LYRZDK": {
+            "name": "The Great Gatsby",
+            "type": "Fiction",
+            "author": "F. Scott Fitzgerald",
+            "available": 0,
+            "user": 0
+        },
+        "YRZLDK": {
+            "name": "The Hobbit",
+            "type": "Fantasy",
+            "author": "J. R. R. Tolkien",
+            "available": 1,
+            "user": 0
+        },
+        "JFMMOT": {
+            "name": "The Wolf in White Van",
+            "type": "Fiction",
+            "author": "John Darnielle",
+            "available": 1,
+            "user": 0
+        },
+        "XPQUUJ": {
+            "name": "Necroscope",
+            "type": "Brian Lumley",
+            "author": "Horror",
+            "available": 0,
+            "user": 0
+        },
+        "CDMECD": {
+            "name": "Cryptonomicon",
+            "type": "Science Fiction",
+            "author": "Neal Stephenson",
+            "available": 0,
+            "user": 1
+        }
+    }
+}
