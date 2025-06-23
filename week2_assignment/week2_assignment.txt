@@ -1,0 +1,42 @@
+Hello Felipe,
+I finished your previous ML course a couple months ago and now I am back for the sequel!
+Sorry for the late assignment, real life has been very very busy in the last month and a half, but here goes :
+
+
+I have 3 py files available from my repo here:
+https://github.com/speculardecay/appliedML/tree/main/week2_assignment
+
+a_star.py
+Same file as you provided, I did not modify it in any way
+
+hda.py
+This code should be copied into the HDA Python Module
+
+python_sop.py
+This code should be copied into a python node located INSIDE the HDA.
+Make sure you update the path to the folder containing the a_star.py at the top of the script of course.
+
+
+HDA setup
+You need to copy the following line into the Callback Script of the "NPCS" folder in the HDA parameters.
+kwargs["node"].hdaModule().clean_npc_data(kwargs)
+
+You need to copy the following line into the Callback Script of the "npc_#" parameter.
+kwargs["node"].hdaModule().save_npc_position(kwargs)
+
+Optional : You can copy the following line into the Callback Script of the "execute" button.
+hou.phm().print_npc_data()
+
+I am using your Houdini sample scene as a base. You need to plug your "merge2" node into the "a_star" HDA.
+
+
+How to use
+- Populate your HDA with NPCs
+- Go to frame 1
+- Each time you change frame the NPCs will move towards your Main Character
+- Reset the NPCs by going back to frame 1
+*** For some reason the python sop actually updates the position of the NPCs when changing to a new frame.
+*** Because of this, the movement always seems to be delayed by 1 frame.
+*** The NPCs are re-calculating the path at every frame, so in theory they should follow the Main Character as it moves but I did not have time to implement this movement.
+
+Thanks a lot for your time, I would gladly read any comment you have for me!
